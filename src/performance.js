@@ -6,6 +6,7 @@ const suite = new Benchmark.Suite;
 const arrayPushAndIncrement = require('./arrayPushAndIncrement');
 const arrayPushAndReduce = require('./arrayPushAndReduce');
 const whileLoopArrayReduce = require('./whileLoopArrayReduce');
+const whileSum = require('./whileSum');
 
 suite.add('arrayPushAndIncrement', function() {
         arrayPushAndIncrement(45678);
@@ -15,6 +16,9 @@ suite.add('arrayPushAndIncrement', function() {
     })
     .add('whileLoopArrayReduce', function() {
         whileLoopArrayReduce(45678);
+    })
+    .add('whileSum', function() {
+        whileSum(45678);
     })
     .on('cycle', function(event) {
         console.log(String(event.target));
