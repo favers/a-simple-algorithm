@@ -5,12 +5,16 @@ const suite = new Benchmark.Suite;
 
 const arrayPushAndIncrement = require('./arrayPushAndIncrement');
 const arrayPushAndReduce = require('./arrayPushAndReduce');
+const whileLoopArrayReduce = require('./whileLoopArrayReduce');
 
 suite.add('arrayPushAndIncrement', function() {
-        arrayPushAndIncrement(45678)
+        arrayPushAndIncrement(45678);
     })
     .add('arrayPushAndReduce', function() {
-        arrayPushAndReduce(45678)
+        arrayPushAndReduce(45678);
+    })
+    .add('whileLoopArrayReduce', function() {
+        whileLoopArrayReduce(45678);
     })
     .on('cycle', function(event) {
         console.log(String(event.target));
