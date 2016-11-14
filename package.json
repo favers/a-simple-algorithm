@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/favers/a-simple-algorithm#readme",
   "devDependencies": {
+    "benchmark": "^2.1.2",
     "chai": "^3.5.0",
     "codecov.io": "^0.1.6",
     "ghooks": "^1.3.2",
