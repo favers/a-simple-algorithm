@@ -5,5 +5,5 @@
 
 
 ```
-npm i -D chai codecov.io ghooks istanbul mocha
+npm install
 ```
