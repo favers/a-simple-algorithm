@@ -4,6 +4,7 @@
 [![codecov](https://codecov.io/gh/favers/a-simple-algorithm/branch/master/graph/badge.svg)](https://codecov.io/gh/favers/a-simple-algorithm)
 
 
+## 依赖安装
 ```
 npm install
 ```
